@@ -1,0 +1,427 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.set-width {
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.main-nav {
+  z-index: 99;
+  position: fixed;
+  background-color: rgb(255, 255, 255, 0.7);
+  height: 75px;
+}
+.main-nav a {
+  font-size: xx-large;
+  color: black;
+  font-style: normal;
+}
+.sidenav-overlay {
+  color: #d7231e;
+}
+.sidenav li > a {
+  color: #d7231e;
+}
+.block-button {
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-nav ul {
+}
+.main-content {
+}
+.main-footer {
+}
+.hero-form {
+  height: 700px;
+  width: 450px;
+  background-color: rgb(215, 35, 30, 0.6);
+  margin: 100px 100px 0px 0px;
+  float: right;
+}
+.hero-form-a {
+  padding: 20px 20px 20px 20px;
+  display: block;
+}
+
+.hero-form-a p {
+  text-align: center;
+  color: white;
+}
+.hero-form-a h5 {
+  text-align: center;
+  color: white;
+}
+.hero-form-b {
+  padding: 0px 40px 0px 20px;
+  margin: 0px 20px 0px 20px;
+}
+.hero-form-c {
+  padding: 0px 40px 20px 40px;
+  justify-content: center;
+  text-align: center;
+}
+.hero-form-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+}
+.hero-form-c a {
+  margin: 0px 20px 0px 20px;
+}
+.hero-form-b label {
+  color: white;
+}
+
+input[type="checkbox"] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+}
+.checkboxtext {
+  /* Checkbox text */
+  font-size: 110%;
+  display: inline;
+  color: white;
+}
+.check-form {
+  padding-top: 40px;
+}
+#fname {
+  background-color: white;
+}
+
+input[type="text"],
+select,
+textarea {
+  background-color: white;
+  color: blue;
+}
+.other-block {
+  display: inline-block;
+}
+.block1 {
+  background-image: url(../img/sleepy.png);
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.block2 {
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.block2 > img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+.block3 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: rgb(215, 35, 30, 0.1);
+}
+.block4 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.block5 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: rgb(215, 35, 30, 0.1);
+}
+.block6 {
+  display: block;
+}
+.block6 > img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  max-width: auto;
+}
+.block7 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: rgb(215, 35, 30, 0.1);
+}
+.block-top {
+  display: block;
+  place-items: center;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.block-top h3 {
+  text-align: center;
+}
+.block-mid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block-mid img {
+  max-height: 200px;
+  width: auto;
+}
+.block-mid h5 {
+  text-align: center;
+}
+.block-mid p {
+  text-align: center;
+}
+.block-mid-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  place-items: center;
+  width: 100%;
+}
+.block-mid-block-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grid-img {
+  flex-direction: column;
+}
+.block-bottom {
+  justify-content: center;
+  text-align: center;
+}
+.block-bottom a {
+  background-color: #4267b2;
+}
+.block-bottom a:hover {
+  background-color: #1f1724;
+}
+waves-effect.waves-brown .waves-ripple {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+  background-color: #d7231e;
+}
+.block-card {
+  flex: 0 1 150px;
+  margin: 10px;
+}
+.block-card-a {
+}
+.block-card-b {
+}
+.block-card-b h3 {
+  text-align: center;
+}
+.block-card-b h5 {
+  text-align: center;
+  color: #4267b2;
+}
+#block-card-101 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.block-card-c {
+}
+.block-card-c b {
+  color: #d7231e;
+}
+.block-card-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.underline {
+  background: black;
+  height: 4px;
+  width: 12rem;
+}
+.footer-nav {
+  display: flex;
+  flex: 2 1 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list-style {
+  list-style: none;
+}
+.footer-nav-block {
+  display: inline-block;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+.text-red {
+  color: #d7231e;
+}
+.text-center {
+  text-align: center;
+}
+.content-center {
+  justify-content: center;
+}
+
+.brand-logo {
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 10px;
+  opacity: 1;
+  width: 150px;
+  height: auto;
+  padding-top: 13px;
+}
+
+.logoimg {
+  height: auto;
+  width: 150px;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: inline-block;
+  z-index: 1000;
+}
+
+.logo {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  padding-top: 15px;
+}
+.main-nav-top {
+  position: fixed;
+  z-index: 100;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+.main-nav-li {
+  color: black;
+  font-size: xx-large;
+}
+.hero-form-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .block-mid {
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .block-card {
+    margin: 40px;
+  }
+}
+@media only screen and (max-width: 895px) {
+  .block-mid-block-card {
+    justify-content: center;
+  }
+  .other-block {
+    display: block;
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .hero-form {
+    display: none;
+  }
+  .hero-form-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: rgb(215, 35, 30, 0.8);
+    float: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .hero-form-a-mobile {
+    display: block;
+  }
+  .hero-form-a-mobile h5 {
+    text-align: center;
+    color: white;
+  }
+  .hero-form-a-mobile p {
+    text-align: center;
+    color: white;
+  }
+  .hero-form-b-mobile {
+  }
+  .hero-form-b-mobile label {
+    color: white;
+  }
+  .form-buttons-mobile {
+    padding-top: 20px;
+  }
+  .waves-effect {
+    display: block;
+  }
+
+  .block1 {
+    background-image: url(../img/sleepy2.png);
+    height: 100vh;
+    width: 100vw;
+    width: 100%;
+  }
+  .logo {
+    width: 200px;
+  }
+  .logoimg {
+    width: 75px;
+    height: auto;
+  }
+  .block-card {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .block-mid-grid {
+    display: flex;
+    flex: 2 1 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-wrapper {
+    place-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .footer-nav-block {
+    flex-direction: column;
+    flex: 2 1 auto;
+  }
+  .nav-wrapper {
+    position: fixed;
+  }
+  .block1 {
+    width: 100vw;
+  }
+  .block-card-grid {
+    display: flex;
+    flex: 2 1 auto;
+    flex-wrap: wrap;
+    place-items: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .block1 {
+    width: 100%;
+  }
+}
