@@ -29,9 +29,19 @@
     <link rel="stylesheet" href="css/socialproof.css" />
   </head>
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems, {});
+      });
+    </script>
     <div class="main-wrapper">
       <nav class="main-nav-top">
         <div class="nav-wrapper">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
           <img src="./img/logopic.png" alt="logopic" class="logoimg" />
           <img src="./img/logo.png" alt="logopic" class="logo" />
           <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -40,8 +50,15 @@
             <li><a href="collapsible.html" class="main-nav-li">LOGIN</a></li>
             <li><a href="collapsible.html" class="main-nav-li">SIGNUP</a></li>
           </ul>
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">HOME</a></li>
+            <li><a href="badges.html">WHY JOIN US?</a></li>
+            <li><a href="collapsible.html">LOGIN</a></li>
+            <li><a href="mobile.html">SIGNUP</a></li>
+          </ul>
         </div>
       </nav>
+
       <div class="main-content">
         <div class="block1">
           <div class="hero-form">
@@ -208,7 +225,9 @@
               </div>
             </div>
             <div class="block-bottom">
-              <a class="waves-effect waves-light btn-large">JOIN NOW</a>
+              <div class="block-button">
+                <a class="waves-effect waves-light btn-large">JOIN NOW</a>
+              </div>
             </div>
           </div>
         </div>
@@ -265,12 +284,16 @@
               </div>
             </div>
             <div class="block-bottom">
-              <a class="waves-effect waves-light btn-large"
-                ><i class="material-icons left">play_arrow</i>WATCH</a
-              >
-              <a class="waves-effect waves-light btn-large"
-                ><i class="material-icons left">library_books</i>READ</a
-              >
+              <div class="block-button">
+                <a class="waves-effect waves-light btn-large"
+                  ><i class="material-icons left">play_arrow</i>WATCH</a
+                >
+              </div>
+              <div class="block-button">
+                <a class="waves-effect waves-light btn-large"
+                  ><i class="material-icons left">library_books</i>READ</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -316,7 +339,9 @@
               </div>
             </div>
             <div class="block-bottom">
-              <a class="waves-effect waves-light btn-large">JOIN NOW</a>
+              <div class="block-button">
+                <a class="waves-effect waves-light btn-large">JOIN NOW</a>
+              </div>
             </div>
           </div>
         </div>
