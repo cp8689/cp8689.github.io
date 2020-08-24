@@ -113,7 +113,9 @@ textarea {
   background-color: white;
   color: blue;
 }
-
+.other-block {
+  display: inline-block;
+}
 .block1 {
   background-image: url(../img/sleepy.png);
   height: 100vh;
@@ -327,6 +329,10 @@ waves-effect.waves-brown .waves-ripple {
 @media only screen and (max-width: 895px) {
   .block-mid-block-card {
     justify-content: center;
+  }
+  .other-block {
+    display: block;
+    padding-bottom: 15px;
   }
 }
 @media only screen and (max-width: 650px) {
